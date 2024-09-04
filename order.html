@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <meta name="description" content="SweetLife">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <script src="./js/order.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./order.html">Order</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./features.html">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="form">
+        <h2>Place Order</h2>
+        <form  action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" onsubmit="return validateForm()">
+          <div>
+            <label for="deliveryMethod">Delivery or Pickup:</label>
+            <select id="deliveryMethod" name="deliveryMethod">
+              <option value="delivery">Delivery</option>
+              <option value="pickup">Pickup</option>
+            </select>
+          </div>
+          <div id="deliveryAddress">
+            <label for="deliveryAddressInput">Delivery Address:</label>
+            <input type="text"  name="delivery_address" id="deliveryAddressInput">
+          </div>
+          <br />
+          <div id="sameAddress">
+            <label for="sameAddressCheckbox">Same as Delivery Address(For billing address):</label>
+            <input type="checkbox" onclick="copy(event)"  id="sameAddressCheckbox">
+          </div>
+          <br />
+          <div>
+            <label for="billingAddressInput">Billing Address:</label>
+            <input type="text" id="billingAddressInput" name="billing_address">
+          </div>
+          <br />
+          <div>
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber">
+          </div>
+          <div>
+            <label for="email">Email for Receipt:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <br/>
+          <div>
+            <label for="ic1">Choose a flavor:</label>
+            <br/>
+            <input type="checkbox" id="ic1" value="Chocolate Fudge Brownies" name="ic1" />
+            <label for="ic1">Chocolate Fudge Brownies</label><br/>
+            <br/>
+            <input type="checkbox" id="ic2" value="Pistachio Pistachio" name="ic2" />
+            <label for="ic2">Pistachio Pistachio</label><br/>
+            <br/>
+            <input type="checkbox" id="ic3" value="Coffee Coffee BuzzBuzzBuzz!" name="ic3" />
+            <label for="ic3">Coffee Coffee BuzzBuzzBuzz!</label><br/>
+          </div>
+          <br/>
+          <div>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+              <option value="pickup">Pay on Pickup</option>
+              <option value="online">Pay Online</option>
+            </select>
+          </div>
+          <div id="creditCardFields" style="display: none;">
+            <div>
+              <label for="creditCardType">Credit Card Type:</label>
+              <select id="creditCardType" name="credit_card_type">
+                <option value="card1" selected>--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+              </select>
+            </div>
+            <div>
+              <label for="creditCardNumber">Credit Card Number:</label>
+              <input type="text" id="creditCardNumber" name="credit_card_number">
+            </div>
+          </div>
+          <button type="submit">Place Order</button>
+  </form>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">SweetLife</h1>
+          <h2>Location</h2>
+          <address>
+            80 Duy Tan, Cau Giay, Ha Noi<br>
+          </address>
+        </div>
+        <div class="legal">
+          <p>&copy; 2024. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

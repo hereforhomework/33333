@@ -1,0 +1,47 @@
+body {
+    background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(90deg, rgb(34, 222, 237), rgb(135, 89, 215));
+    margin: 0; /* To remove default margin */
+    padding: 0; /* To remove default padding */
+    font-family: Arial, sans-serif;
+
+}
+
+.form {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+/* Apply styles to input fields */
+.form input[type="text"],
+.form input[type="email"],
+.form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Apply styles to button */
+.form button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+

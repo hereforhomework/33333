@@ -1,0 +1,106 @@
+.history {
+    height: auto; /* Change height to auto for responsiveness */
+    min-height: 400px; /* Maintain a minimum height */
+    background-color: #c2e7f3; 
+}
+
+.history h1 {
+    text-align: left;
+    padding-left: 100px;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+
+.history p {
+    text-align: left;
+    padding-left: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+img {
+    margin-left: auto; /* Move image to the right */
+    display: block; /* Make sure image is on its own line */
+}
+.history-p {
+    padding-top: 20px;
+    width: 100%; /* Adjust width for responsiveness */
+}
+
+
+.menu{
+    padding-top: 10px;
+}
+.menu h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.products-menu {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.card {
+    max-width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+  
+.price {
+    color: black;
+    font-size: 22px;
+  }
+
+  .card a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+
+
+/* Responsive layout adjustments */
+@media only screen and (min-width: 600px) {
+    .history-p {
+        width: 60%; /* Adjust width for larger screens */
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .history-p {
+        width: 40%; /* Adjust width for even larger screens */
+    }
+}
+
+body{
+    background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(34, 222, 237),rgb(135, 89, 215));
+}
